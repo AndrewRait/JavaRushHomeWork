@@ -18,7 +18,7 @@ public class Solution {
 
     public static void main(String[] args) throws Exception {
 
-        /*  Легкий способ для фиксированного количества чисел:
+        /**  Легкий способ для фиксированного количества чисел:
 
             int[] firstMas = new int[3];
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -40,7 +40,7 @@ public class Solution {
             }
         */
 
-        /*
+        /**
         List<Integer> arrayList= new ArrayList<Integer>();
         //int[] firstMas = new int[3];
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -57,7 +57,7 @@ public class Solution {
             }
         }*/
 
-        /*
+        /**
         int[] mas = new int[firstMas.length];
         for (int i = 0; i < firstMas.length; i++) {
             for (int j = i + 1; j < firstMas.length; j++) {
@@ -69,7 +69,7 @@ public class Solution {
         }
         */
 
-        /*
+        /**
         Map<Integer, Integer> hm = new HashMap<Integer, Integer>();
         Integer am;
         for (Integer integer : arrayList) {
