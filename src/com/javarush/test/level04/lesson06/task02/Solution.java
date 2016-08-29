@@ -54,6 +54,7 @@ public class Solution {
         for (int i = 0; i < 4; i++) {
             list.add(Integer.parseInt(bFArrayL.readLine()));
         }
+
         Collections.sort(list, new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {
@@ -61,6 +62,7 @@ public class Solution {
                 return o1.toString().compareTo(o2.toString());
             }
         });
+
         System.out.println(list.get(0));
 
         int[] mas = new int[list.size()];
