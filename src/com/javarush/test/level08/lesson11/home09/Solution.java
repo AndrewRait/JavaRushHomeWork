@@ -1,5 +1,6 @@
 package com.javarush.test.level08.lesson11.home09;
 
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -15,11 +16,21 @@ import java.util.Date;
 
 public class Solution {
 
-    public static void main(String[] args) {
-        
+    public static void main(String[] args) throws Exception{
+
+        String s = "JANUARY 2 2020";
+        boolean x = isDateOdd(s);
+        System.out.println(s + " = " + x);
     }
 
+    // МЕТОД НУЖНО ЗАМЕНИТЬ В СООТВЕТСТВИИ С JAVA 8
     public static boolean isDateOdd(String date) {
-        return true;
+
+        Date dat = new Date(date);
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(dat);
+        int days = cal.get(Calendar.DAY_OF_YEAR);
+        System.out.println(days);
+        return days % 2 != 0;
     }
 }

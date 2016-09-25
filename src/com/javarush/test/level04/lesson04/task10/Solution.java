@@ -1,6 +1,7 @@
 package com.javarush.test.level04.lesson04.task10;
 
-/*  Три числа
+/**
+    Три числа
     Ввести с клавиатуры три целых числа. Определить, имеется ли среди них хотя бы одна пара
     равных между собой чисел.
     Если такая пара существует, вывести на экран числа через пробел. Если все три числа равны между
@@ -18,7 +19,7 @@ public class Solution {
 
     public static void main(String[] args) throws Exception {
 
-        /**  Легкий способ для фиксированного количества чисел:
+          //Легкий способ для фиксированного количества чисел:
 
             int[] firstMas = new int[3];
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -38,7 +39,7 @@ public class Solution {
             else if (firstMas[0] == firstMas[2]) {
                 System.out.printf("%d %d", firstMas[0], firstMas[2]);
             }
-        */
+
 
         /**
         List<Integer> arrayList= new ArrayList<Integer>();
