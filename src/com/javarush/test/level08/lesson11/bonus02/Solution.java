@@ -24,40 +24,29 @@ import java.util.List;
     Абрамовичи
 */
 
-public class Solution {
-
-    public static void main(String[] args) throws IOException {
-
+public class Solution
+{
+    public static void main(String[] args) throws IOException
+    {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         //list of addresses
-        //Так же через МАП, но будут уникальными ключи.
-        List<String> city = new ArrayList<>();
-        List<String> family = new ArrayList<>();
-        while (true) {
+        List<String> addresses = new ArrayList<String>();
+        while (true)
+        {
+            String family = reader.readLine();
+            if (family.isEmpty()) break;
 
-            String city1 = reader.readLine();
-
-            if (city1.isEmpty()) break;
-            city.add(city1);
-            String family1 = reader.readLine();
-            family.add(family1);
+            addresses.add(family);
         }
 
         //read home number
-        String city2 = reader.readLine();
+        int houseNumber = Integer.parseInt(reader.readLine());
 
-        /**
-        if (0 <= houseNumber && houseNumber < addresses.size()) {
-
+        if (0 <= houseNumber && houseNumber < addresses.size())
+        {
             String familySecondName = addresses.get(houseNumber);
             System.out.println(familySecondName);
-        }*/
-        for (int i = 0; i < city.size(); i++) {
-
-            if (city.get(i).equals(city2)) {
-                System.out.println(family.get(i));
-            }
         }
     }
 }
